@@ -12,27 +12,17 @@ const ListPokemon = () => {
         },
         {
             id : 3,
-            name: "Charmander",
-            type: "Fire",
+            name: "Bulbasaur",
+            type: "Grass",
         },
-        {
-            id : 4,
-            name: "Charmander",
-            type: "Fire",
-        },
-        {
-            id : 5,
-            name: "Charmander",
-            type: "Fire",
-            }
+
     ];
 
     return (
-        pokemons.map((pokemon, index) => {
+        pokemons.map((pokemon) => {
             return (
-                <article key={index}>
+                <article>
                     <p><strong>Name : </strong>{pokemon.name}</p> 
-                    <p><strong>Type : </strong> {pokemon.type}</p>
                     ------------------------------------------------------------------
                 </article>
             );
