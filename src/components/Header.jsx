@@ -2,6 +2,10 @@ const Header = () => {
 
   const isAuthenticated = true;
 
+  const handleButtonClick = () => {
+    console.log('Hey !');
+  };
+
   return (
     <header>
       <nav>
@@ -16,6 +20,9 @@ const Header = () => {
       ) : (
         <p>Please login</p>
       )}
+
+      <button onClick={handleButtonClick}>Click me</button>
+      
     </header>
   );
 };

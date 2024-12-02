@@ -1,8 +1,10 @@
+
 import './App.css'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ShowPokemon from './components/ShowPokemon';
 import ListPokemon from './components/ListPokemon';
+import Faq from './components/Faq';
 
 const App = () => {
 
@@ -23,10 +25,7 @@ const App = () => {
         <h1>Hello SDV!</h1>
       </main>
 
-      <ListPokemon />
-
-
-      <button onClick={handleButtonClick}>Click me</button>
+      <Faq />
 
       <Footer />
     </>
