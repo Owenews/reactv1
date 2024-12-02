@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      <p>© 2024 Owen Iluobe - Tout droits réservés</p>
+      <p>© 2024 Owen Iluobe - All rights reserved</p>
     </footer>
   );
 };
