@@ -1,6 +1,3 @@
-// ShowPokemon.jsx
-import React from 'react';
-
 const ShowPokemon = () => {
   const pokemon = {
     name: "Pikachu",
