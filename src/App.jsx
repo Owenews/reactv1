@@ -5,9 +5,10 @@ import Footer from './components/Footer';
 import ShowPokemon from './components/ShowPokemon';
 import ListPokemon from './components/ListPokemon';
 import Faq from './components/Faq';
+import Location from './components/Location';
 
 const App = () => {
-
+  
   const person = {
     name: 'Owen Iluobe',
     age: 20,
@@ -25,7 +26,7 @@ const App = () => {
         <h1>Hello SDV!</h1>
       </main>
 
-      <Faq />
+      <Location />
 
       <Footer />
     </>
