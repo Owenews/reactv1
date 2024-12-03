@@ -1,35 +1,35 @@
+import { useState } from "react";
+
 const ListPokemon = () => {
-    const pokemons = [
-        {
-            id : 1,
-            name: "Pikachu",
-            type: "Electric",
-        },
-        {
-            id : 2,
-            name: "Raichu",
-            type: "Electric",
-        },
-        {
-            id : 3,
-            name: "Bulbasaur",
-            type: "Grass",
-        },
+  const [pokemons, setPokemons] = useState([]);
 
-    ];
+  if (pokemons.length === 0) {
+    fetch("https://pokebuildapi.fr/api/v1/pokemon")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setPokemons(data);
+      });
+  }
 
-    return (
-        pokemons.map((pokemon) => {
+  return (
+    <main>
+      {pokemons.length > 0 ? (
+        <>
+          {pokemons.map((pokemon) => {
             return (
-                <article>
-                    <p><strong>Name : </strong>{pokemon.name}</p> 
-                    ------------------------------------------------------------------
-                </article>
+              <article>
+                <p>{pokemon.name}</p>
+              </article>
             );
-        })
-    );
+          })}
+        </>
+      ) : (
+        <p>En attente de récupération des données</p>
+      )}
+    </main>
+  );
 };
 
 export default ListPokemon;
-        
-            

@@ -1,7 +1,7 @@
 const Header = () => {
-
+  
   const isAuthenticated = true;
-
+  
   const handleButtonClick = () => {
     console.log('Hey !');
   };
@@ -11,10 +11,11 @@ const Header = () => {
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/proj">Proj</a></li>
+          <li><a href="/poke">Pokemon</a></li>
         </ul>
       </nav>
 
+      {/*}
       {isAuthenticated ? (
         <p>You are logged in</p>
       ) : (
@@ -22,7 +23,7 @@ const Header = () => {
       )}
 
       <button onClick={handleButtonClick}>Click me</button>
-      
+      */}
     </header>
   );
 };
